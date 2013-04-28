@@ -1,6 +1,7 @@
 Breakawayio::Application.routes.draw do
   
   root :to => 'marketing#index'
+  match "/demo" => "marketing#demo"
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
