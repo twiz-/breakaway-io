@@ -3,7 +3,7 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 .second_section{
 	background: url('/assets/noise.png') repeat;
-	height: 2800px;
+	height: 2900px;
 }
 .marketing_header {
 	background: none repeat scroll 0 0 rgba(255, 255, 255, .7);
@@ -19,4 +19,37 @@
 	position: absolute;
 	margin-left: -88px;
 	margin-top: 40px;
+}
+.pulledquote:before {
+	display: block;
+	float: right;
+	content: attr(data-pullquote);
+	padding: 0 0 0 10px;
+	margin: 0 100px 10px 10px;
+	width: 270px;
+	font-size: 1.50em;
+	line-height: 1.4em;
+	text-align: right;
+	color: #A80000;
+	font-style: italic;
+}
+.pulledquote-left:before {
+	display: block;
+	float: left;
+	content: attr(data-pullquote);
+	padding: 0 0 0 10px;
+	margin: 0 50px 10px 0px;
+	width: 270px;
+	font-size: 1.50em;
+	line-height: 1.4em;
+	text-align: right;
+	color: #A80000;
+	font-style: italic;
+}
+.tick_town {
+	background-color: #58c026;
+	border-radius: 3px;
+}
+.indent_list {
+	margin-left: 30px;
 }
