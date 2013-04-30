@@ -14,6 +14,7 @@
 //= require jquery_ujs
 //= require foundation
 //= require backstretch
+//= require alertify
 //= require_tree .
 
 $(document).foundation();
