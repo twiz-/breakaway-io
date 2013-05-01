@@ -3,6 +3,7 @@ Breakawayio::Application.routes.draw do
   root :to => 'marketing#index'
   match "/demo" => "marketing#demo"
   match "/thanks" => "marketing#thanks"
+  match '/blog' => redirect("http://blog.54footy.com"), :as => :blog
   
   # The priority is based upon order of creation:
   # first created -> highest priority.
