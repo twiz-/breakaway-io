@@ -1,27 +1,18 @@
-<nav class="top-bar" style="margin-bottom:0px;">
-  <ul class="title-area">
-    <!-- Title Area -->
-    <li class="name">
-      <h1><%= link_to "Breakaway.io", "/" %></a></h1>
-    </li>
-    <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-  </ul>
-
-  <section class="top-bar-section">
-    <!-- Right Nav Section -->
-    <ul class="right">
-      <li class="divider hide-for-small"></li>
-      <li class="active" id="sign_in"><a href="#">Sign In</a></li>
-      <li class="divider"></li>
-      <li><a href="#">Blog</a></li>
-      <li class="divider show-for-small"></li>
-      <li class="divider"></li>
-      <li><a href="mailto:support@54footy.com">Contact</a></li>
-      <li class="divider show-for-small"></li>
-    </ul>
-  </section>
-</nav>  
+<nav id="navbar-main-nav" class="navbar">
+  <div class="row">
+    <h1 class="four columns">
+      <a href="/">
+        <h4 class="product_name pull left">Breakaway.io</h4>
+      </a>
+    </h1>
+    <nav class="push_five three columns pull_right mailer_blog">
+      <ul class="main-nav pull right">
+        <li><%= link_to "Blog", blog_path %></li>
+        <li><a href="mailto:support@54footy.com">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</nav>
 <!-- End Header and Nav -->
 
 <div class="second_section">
@@ -29,13 +20,15 @@
     <div class="twelve columns" style="margin-top:15px;background-color:white;border-radius:4px;padding:50px;">
       <p>Thanks for requesting an invite!</p>
 
-      <p>We use a service called <a href="http://www.mailchimp.com">mailchimp</a> to keep track of coaches requesting invites. So now, mailchimp will have sent you an email asking you to confirm that you are who you say you are so we can send you the Breakaway.io invitation. This confirmation email helps protect us against sending invites to fake accounts. </p>
+      <p>We use a service called <a href="http://www.mailchimp.com">mailchimp</a> to keep track of coaches requesting invites. So now, mailchimp will have sent you an email asking you to confirm that you are who you say you are so we can send you the Breakaway.io invitation. Mailchimp and the confirmation email helps protect us against sending invites to fake accounts. </p>
 
       <p>Don't hesitate to reach out with any questions to <a href="mailto:support@54footy.com">support@54footy.com</a></p>
 
       <p>Thanks and see you on the inside soon!</p>
-      <p>Think someone else might like this too?</p>
-      <a href="mailto:?subject=They actually make a lot of good points&amp;body=Thought you might like this, seems pretty cool. http://www.54footy.com." title="Share by Email">Email this page<%= image_tag "envelope-med.png"%></a>
+      <p>-54footy team</p>
+      <hr>
+      <p>Think another coach might benefit from this service? Spread the word and <a href="mailto:?subject=They actually make a lot of good points&amp;body=Thought you might like this, seems pretty cool. http://www.54footy.com." title="Share by Email">Email this page</a></p>
+      
     </div>
 </div>
   <!-- Footer -->

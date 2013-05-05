@@ -60,8 +60,26 @@
 	
 }
 /* end navigation styling*/
+/* First Section*/
+.signup_presenter {
+	margin-top:15px;
+	background-color:rgba(0,0,0, 0.7);
+	border-radius:4px;
+	padding:8px;
+}
+.signup_presenter h4 {
+	text-align:center;
+	color:white;
+}
+
+.signup_presenter h5 {
+	color:white;
+}
+
 .marketing_header {
-	font-family: "Open Sans";
+	font-weight: 300;
+	margin-top: 15px;
+	font-size: 2.75em;
 }
 .second_section{
 	background: url('/assets/noise.png') repeat;
@@ -174,7 +192,11 @@ input {
    color: green;
    font-size: 1.15em;
 }
-
+.second_section h2 {
+	line-height: 45px;
+	font-family: 'Open Sans';
+	font-weight: 300;
+}
 
 
 
