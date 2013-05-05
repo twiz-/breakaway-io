@@ -1,37 +1,31 @@
-<nav class="top-bar" style="margin-bottom:0px;">
-  <ul class="title-area">
-    <!-- Title Area -->
-    <li class="name">
-      <h1><a href="#">Breakaway.io</a></h1>
-    </li>
-    <!-- Remove the class "menu-icon" to get rid of menu icon. Take out "Menu" to just have icon alone -->
-    <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
-  </ul>
-
-  <section class="top-bar-section">
-    <!-- Right Nav Section -->
-    <ul class="right">
-      <li><%= link_to "Blog", blog_path %></li>
-      <li class="divider show-for-small"></li>
-      <li class="divider"></li>
-      <li><a href="mailto:support@54footy.com">Contact</a></li>
-      <li class="divider show-for-small"></li>
-    </ul>
-  </section>
-</nav>  
+<nav id="navbar-main-nav" class="navbar">
+  <div class="row">
+    <h1 class="four columns">
+      <a href="/">
+        <h4 class="product_name pull left">Breakaway.io</h4>
+      </a>
+    </h1>
+    <nav class="push_five three columns pull_right mailer_blog">
+      <ul class="main-nav pull right">
+        <li><%= link_to "Blog", blog_path %></li>
+        <li><a href="mailto:support@54footy.com">Contact</a></li>
+      </ul>
+    </nav>
+  </div>
+</nav>
 <!-- End Header and Nav -->
 <div class="stuff">
   <div class="row" style="text-align:center;">
-    <h2><span class="marketing_header">Spending too much of your time trying to make</span></h2><h2><span class="marketing_header"> parents happy instead of developing quality </span></h2><h2><span class="marketing_header"> soccer players?</span></h2><br>
-    <div class="large-5 columns" style="margin-top:15px;background-color:rgba(0,0,0, 0.7);;border-radius:4px;padding:8px;">
-      <h3 style="text-align:center;color:white;">Online Player Profiles College Coaches Will Actually Look At.</h3>
+    <h2><span class="marketing_header">Spending too much of your time trying to make parents happy instead of developing qualitysoccer players?</span></h2><br>
+    <div class="five columns" style="margin-top:15px;background-color:rgba(0,0,0, 0.7);;border-radius:4px;padding:8px;">
+      <h4 style="text-align:center;color:white;">Online Player Profiles College Coaches Will Actually Look At.</h4>
       <h5 style="color:white;">Give your entire team an even better chance of being discovered by top college coaches before the end of this season.</h5>
       <div style="margin-top:8px;">
-        <a href="#first_title" class="button">Learn More</a>
-        <a href="#invitation_title" class="button success">Request an invite</a>
+        <a href="#first_title" class="tiny btn">Learn More</a>
+        <a href="#invitation_title" class="tiny btn">Request an invite</a>
       </div>
     </div>
-    <div class="large-5 columns">
+    <div class="five columns push_one">
       <%= image_tag "electronic-final.png "%>
     </div>
   </div>
@@ -153,27 +147,35 @@
       </p>
       <br>
       <!-- Begin MailChimp Signup Form -->
-      <div class="row">
-        <div class="push_three five columns invitation_box">
-         <h4 id="invitation_title"><strong>Request an Invitation</strong></h4>
-          <form action="http://54footy.us4.list-manage.com/subscribe/post?u=de747b628fbcf3df0952db4f2&amp;id=d1bef775c2" method="post">
-          	<input type="email" name="EMAIL" class="email" id="mce-EMAIL" placeholder="Enter Email Address For Invitation" required>
-          	<div class="push_two medium success btn clear"><input type="submit" value="Get Early Invitation" name="subscribe" id="mc-embedded-subscribe"></div>
-          </form>
+      <div class="six columns centered">
+        <div class="invitation_box">
+          <div class="row">
+            <div class="twelve columns">
+              <h3 id="invitation_title"><strong>Request an Invitation</strong></h3>
+            </div>
+          </div>  
+          <div class="row">
+            <div class="padding">
+              <form action="http://54footy.us4.list-manage.com/subscribe/post?u=de747b628fbcf3df0952db4f2&amp;id=d1bef775c2" method="post">
+              	<div class="car"><input type="email" name="EMAIL" class="email car_it" id="mce-EMAIL" placeholder="Enter Email Address For Invitation" required></div><br>
+              	<div class="car3"><input class="btn car3" type="submit" value="Get Early Invitation" name="subscribe" id="mc-embedded-subscribe"></div>
+              </form>
+            </div>  
+          </div>
+        <!--End mc_embed_signup-->
+        </div>
+        <div class="row">
+          <p id="trust_print">We wont ever spam or sell your information.</p>
         </div>  
       </div>  
-      <!--End mc_embed_signup-->
-      <div class="row">
-        <p id="trust_print" class="push_three">We wont ever spam or sell your information.</p>
-      </div>  
-      
-      <p>Think someone else might like this too?</p>
-      <a href="mailto:?subject=They actually make a lot of good points&amp;body=Thought you might like this, seems pretty cool. http://www.54footy.com." title="Share by Email">Email this page<%= image_tag "envelope-med.png"%></a>
+      <hr>
+       <div class="row">
+          <p>Do you know a coach that could use some peace from their player's parents?<br>
+          They'll love you forever.<a href="mailto:?subject=They actually make a lot of good points&amp;body=Thought you might like this, seems pretty cool. http://www.54footy.com." title="Share by Email"> Email the link to this page</a></p>
+          
+       </div>  
     </div> 
   </div>
-</div>
-  <!-- Footer -->
-  
   <footer class="row">
     <div class="large-12 columns">
       <hr />
@@ -184,5 +186,15 @@
       </div>
     </div> 
   </footer>
+</div>
+  <!-- Footer -->
+<script>
+  function scrollToAnchor(aid){
+      var aTag = $("a[name='"+ aid +"']");
+      $('html,body').animate({scrollTop: aTag.offset().top},'slow');
+  }
 
-  
+$("#first_title").click(function() {
+   scrollToAnchor('first_title');
+});
+</script>

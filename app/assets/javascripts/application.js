@@ -11,10 +11,9 @@
 // GO AFTER THE REQUIRES BELOW.
 //
 //= require jquery
+//= require jquery-ui
 //= require jquery_ujs
-//= require foundation
+//= require gumby
 //= require backstretch
-//= require alertify
 //= require_tree .
 
-$(document).foundation();

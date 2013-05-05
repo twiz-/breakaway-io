@@ -16,8 +16,8 @@ group :assets do
   gem 'coffee-rails', '~> 3.2.1'
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platforms => :ruby
-  gem 'zurb-foundation', '~> 4.0.0'
   gem 'uglifier', '>= 1.0.3'
+  gem 'gumby-rails'
 end
 
 group :production do 
