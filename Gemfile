@@ -19,7 +19,9 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
   gem 'gumby-rails'
 end
+
 gem 'gumby-rails'
+
 group :production do 
   gem 'pg'
 end
