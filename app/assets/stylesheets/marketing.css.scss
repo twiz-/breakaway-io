@@ -74,6 +74,7 @@
 
 .signup_presenter h5 {
 	color:white;
+	line-height: 23px;
 }
 
 .marketing_header {
@@ -194,9 +195,18 @@ input {
 }
 .second_section h2 {
 	line-height: 45px;
-	font-family: 'Open Sans';
 	font-weight: 300;
 }
-
-
-
+.signup_presenter h4 {
+	line-height: 30px;
+}
+body,p,ul,li  {
+  font-family: 'Raleway';
+  font-weight: 530;
+}
+h1,h2,h3,h4,h5 {
+  font-family: 'Raleway';
+}
+.second_section h2{
+  font-family: 'Raleway';
+}
