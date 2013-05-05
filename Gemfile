@@ -21,6 +21,7 @@ group :assets do
 end
 
 gem 'gumby-rails'
+gem 'jquery-rails'
 
 group :production do 
   gem 'pg'

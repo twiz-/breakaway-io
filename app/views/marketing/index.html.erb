@@ -187,14 +187,12 @@
     </div> 
   </footer>
 </div>
-  <!-- Footer -->
-<script>
-  function scrollToAnchor(aid){
-      var aTag = $("a[name='"+ aid +"']");
-      $('html,body').animate({scrollTop: aTag.offset().top},'slow');
-  }
 
-$("#first_title").click(function() {
-   scrollToAnchor('first_title');
+<script>
+$('a').click(function(){
+    $('html, body').animate({
+        scrollTop: $( $.attr(this, 'href') ).offset().top
+    }, 1500);
+    return false;
 });
 </script>

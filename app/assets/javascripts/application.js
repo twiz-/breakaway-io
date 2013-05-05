@@ -14,6 +14,7 @@
 //= require jquery-ui
 //= require jquery_ujs
 //= require gumby
+//= require alertify
 //= require backstretch
 //= require_tree .
 

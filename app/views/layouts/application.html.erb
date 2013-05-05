@@ -14,9 +14,11 @@
   	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
   	<title><%= content_for?(:title) ? yield(:title) : "Breakaway: get where you need to be" %></title>
-
-  	<%= stylesheet_link_tag    "application" %>
-    <%= csrf_meta_tags %>
+    
+  	 <%= stylesheet_link_tag    "application" %>
+  	 <%= javascript_include_tag "application" %>
+  	 <%= javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.14/jquery-ui.min.js"%>
+     <%= csrf_meta_tags %>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans' rel='stylesheet' type='text/css'>
   </head>
 
@@ -24,7 +26,7 @@
 
     <%= yield %>
 
-    
     <%= javascript_include_tag "application" %>
+   
   </body>
 </html>
