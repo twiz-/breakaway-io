@@ -22,7 +22,7 @@ end
 
 gem 'gumby-rails'
 gem 'jquery-rails'
-
+gem 
 group :production do 
   gem 'pg'
 end
