@@ -22,10 +22,12 @@ end
 
 gem 'gumby-rails'
 gem 'jquery-rails'
-gem 
+gem 'devise'
 group :production do 
   gem 'pg'
 end
+
+
 
 gem 'jquery-rails'
 

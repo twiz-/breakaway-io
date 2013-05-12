@@ -7,8 +7,14 @@
     </h1>
     <nav class="push_five three columns pull_right mailer_blog">
       <ul class="main-nav pull right">
-        <li><%= link_to "Blog", blog_path %></li>
-        <li><a href="mailto:support@54footy.com">Contact</a></li>
+        <% if player_signed_in? %>
+          <li><%= link_to "Blog", blog_path %></li>
+          <li><a href="mailto:support@54footy.com">Contact</a></li>
+          <li><%= link_to "Logout", destroy_player_session_path, method: :delete  %></li>
+        <% else %>
+          <li><%= link_to "Sign Up", new_player_registration_path %></li>
+          <li><%= link_to "Sign in", player_session_path %></li>
+        <% end %>
       </ul>
     </nav>
   </div>

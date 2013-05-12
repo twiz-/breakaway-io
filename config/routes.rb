@@ -1,5 +1,7 @@
 Breakawayio::Application.routes.draw do
   
+  devise_for :players
+
   root :to => 'marketing#index'
   match "/demo" => "marketing#demo"
   match "/thanks" => "marketing#thanks"
