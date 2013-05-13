@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  name: MyString
+  position: MyString
+  club: MyString
+  bio: MyString
+  game_film: MyString
+
+two:
+  name: MyString
+  position: MyString
+  club: MyString
+  bio: MyString
+  game_film: MyString

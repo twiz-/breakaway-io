@@ -11,7 +11,18 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130512033540) do
+ActiveRecord::Schema.define(:version => 20130513001013) do
+
+  create_table "listings", :force => true do |t|
+    t.string   "name"
+    t.string   "position"
+    t.string   "club"
+    t.string   "bio"
+    t.string   "game_film"
+    t.datetime "created_at", :null => false
+    t.datetime "updated_at", :null => false
+    t.integer  "player_id"
+  end
 
   create_table "players", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
