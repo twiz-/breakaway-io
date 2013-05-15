@@ -4,6 +4,7 @@ Breakawayio::Application.routes.draw do
 
   root :to => 'marketing#index'
   match "/demo" => "marketing#demo"
+  match "/account" => "players#account"
   match "/thanks" => "marketing#thanks"
   match '/blog' => redirect("http://blog.54footy.com"), :as => :blog
   
