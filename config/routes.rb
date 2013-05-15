@@ -1,7 +1,4 @@
 Breakawayio::Application.routes.draw do
-  
-  resources :listings
-
 
   devise_for :players
 
