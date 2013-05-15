@@ -14,3 +14,11 @@
  *= require alertify
  *= require_tree .
  */
+
+p.notice {
+	margin: 0px;
+}
+p.alert {
+	margin: 0px;
+}
+/* For devise I suppose */

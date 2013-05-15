@@ -21,6 +21,27 @@
      <%= csrf_meta_tags %>
     <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Raleway">
   </head>
+  <nav id="navbar-main-nav" class="navbar">
+    <div class="row">
+      <h1 class="four columns">
+        <a href="/">
+          <h4 class="product_name pull left">Breakaway.io</h4>
+        </a>
+      </h1>
+      <nav class="push_five three columns pull_right mailer_blog">
+        <ul class="main-nav pull right">
+          <% if player_signed_in? %>
+            <li><%= link_to "Blog", blog_path %></li>
+            <li><a href="mailto:support@54footy.com">Contact</a></li>
+            <li><%= link_to "Logout", destroy_player_session_path, method: :delete  %></li>
+          <% else %>
+            <li><%= link_to "Sign Up", new_player_registration_path %></li>
+            <li><%= link_to "Sign in", player_session_path %></li>
+          <% end %>
+        </ul>
+      </nav>
+    </div>
+  </nav>
 
   <body>
     <p class="notice"><%= notice %></p>
