@@ -1,28 +1,14 @@
-<h1>Listing listings</h1>
-
-<table>
-  <tr>
-    <th>Bio</th>
-    <th>Name</th>
-    <th>Position</th>
-    <th>Film</th>
-    <th>Player</th>
-    <th></th>
-    <th></th>
-    <th></th>
-  </tr>
-
-<% @listings.each do |listing| %>
-  <tr>
-    <td><%= listing.bio %></td>
-    <td><%= link_to "#{listing.name}", listing_path(listing) %></td>
-    <td><%= listing.position %></td>
-    <td><%= listing.film %></td>
-    <td><%= listing.player_id %></td>
-  </tr>
-<% end %>
-</table>
-
-<br />
-
-
+<h1>Browse all players and filter below!</h1>
+<body class="background-layout-index">
+  <div class="row">
+  
+    <% @listings.each do |listing| %>
+      <div class="tile_all four columns">
+        <%= link_to "#{listing.name}", listing_path(listing) %><br>
+        <%= listing.bio %><br>
+        <%= listing.position %><br>
+        <%= youtube_thumb_embed(listing.film).html_safe %> <br>
+      </div>
+    <% end %>
+  </div>
+</div>
