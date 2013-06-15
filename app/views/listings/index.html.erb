@@ -4,10 +4,10 @@
   
     <% @listings.each do |listing| %>
       <div class="tile_all four columns">
-        <%= link_to "#{listing.name}", listing_path(listing) %><br>
+        <%= link_to "#{listing.name} - #{listing.position}", listing_path(listing) %><br>
         <%= listing.bio %><br>
-        <%= listing.position %><br>
-        <%= youtube_thumb_embed(listing.film).html_safe %> <br>
+        <%= youtube_thumb_embed(listing.film).html_safe %>
+        San Juan Soccer Club  2013<br>
       </div>
     <% end %>
   </div>
