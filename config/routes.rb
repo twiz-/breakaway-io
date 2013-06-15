@@ -10,6 +10,8 @@ Breakawayio::Application.routes.draw do
   
   match '/account' => "players#account", as: :player_root
   
+  resources :listings
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

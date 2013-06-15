@@ -15,7 +15,7 @@
 <% @listings.each do |listing| %>
   <tr>
     <td><%= listing.bio %></td>
-    <td><%= listing.name %></td>
+    <td><%= link_to "#{listing.name}", listing_path(listing) %></td>
     <td><%= listing.position %></td>
     <td><%= listing.film %></td>
     <td><%= listing.player_id %></td>
