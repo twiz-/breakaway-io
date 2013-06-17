@@ -6,12 +6,23 @@
 
       <div><%= f.label :email %><br />
       <%= f.email_field :email %></div>
+      
+      <div class="field">
+        <%= f.label :position %><br />
+        <p>Striker</p>
+        <%= f.radio_button(:position,"striker")  %>
+        <p>Defender</p>
+        <%= f.radio_button(:position,"defender")  %>
+        <p>Midfield</p>
+        <%= f.radio_button(:position,"midfield")  %>
+      </div>
 
       <div><%= f.label :password %><br />
       <%= f.password_field :password %></div>
 
       <div><%= f.label :password_confirmation %><br />
       <%= f.password_field :password_confirmation %></div>
+      
 
       <div><%= f.submit "Sign up" %></div>
     <% end %>

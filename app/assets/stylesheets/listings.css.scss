@@ -13,3 +13,12 @@
 	background: url('/assets/noise.png') repeat;
 	
 }
+.entry_icons {
+	font-size: 13px;
+	padding: 4px;
+}
+.add_hover:hover {
+	cursor: pointer;
+	border-radius: 30px;
+	background: green;
+}

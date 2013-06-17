@@ -11,12 +11,11 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130516063206) do
+ActiveRecord::Schema.define(:version => 20130615233401) do
 
   create_table "listings", :force => true do |t|
     t.string   "bio"
     t.string   "name"
-    t.string   "position"
     t.string   "film"
     t.integer  "player_id"
     t.datetime "created_at", :null => false
@@ -36,6 +35,7 @@ ActiveRecord::Schema.define(:version => 20130516063206) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at",                             :null => false
     t.datetime "updated_at",                             :null => false
+    t.string   "position"
   end
 
   add_index "players", ["email"], :name => "index_players_on_email", :unique => true
