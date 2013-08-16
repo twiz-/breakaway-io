@@ -6,9 +6,8 @@
       
       <div class="tile_all four columns">
         <%= listing.player.position %>
-        <%= link_to "#{listing.name} ", listing_path(listing) %><br>
+        <%= link_to "#{listing.player.name}", listing_path(listing) %><br>
         <%= listing.bio %><br>
-        <%= youtube_thumb_embed(listing.film).html_safe %>
         San Juan Soccer Club  2013<br>
         <hr>
         <div class="entry_icons">

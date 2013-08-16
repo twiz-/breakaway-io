@@ -1,5 +1,7 @@
 Breakawayio::Application.routes.draw do
 
+
+
   devise_for :players
 
   root :to => 'marketing#index'
@@ -10,6 +12,8 @@ Breakawayio::Application.routes.draw do
   
   match '/account' => "players#account", as: :player_root
   
+  resources :videos
+
   resources :listings
   
   # The priority is based upon order of creation:
