@@ -15,7 +15,7 @@ html, body {
   height: 100%;
 }
 
-body {
+.body-jekyll {
   background-color: white;
   font: 13.34px helvetica, arial, clean, sans-serif;
   *font-size: small;
