@@ -55,7 +55,6 @@ GEM
     execjs (1.4.0)
       multi_json (~> 1.0)
     fast-stemmer (1.0.2)
-    gumby-rails (1.1)
     hike (1.2.3)
     i18n (0.6.5)
     jekyll (0.12.1)
@@ -112,6 +111,7 @@ GEM
       rdoc (~> 3.4)
       thor (>= 0.14.6, < 2.0)
     rake (10.1.0)
+    rdiscount (2.1.6)
     rdoc (3.12.2)
       json (~> 1.4)
     sass (3.2.10)
@@ -146,7 +146,6 @@ DEPENDENCIES
   bloggy
   coffee-rails (~> 3.2.1)
   devise
-  gumby-rails
   jquery-rails
   pg
   rails (= 3.2.11)
