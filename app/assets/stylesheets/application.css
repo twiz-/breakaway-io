@@ -9,9 +9,7 @@
  * compiled file, but it's generally better to create a new file per style scope.
  *
  *= require_self
- *= require_alertify
- *= require gumby12
- *= require alertify
+ *= require gumby
  *= require_tree .
  */
 

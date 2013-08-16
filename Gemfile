@@ -20,9 +20,9 @@ group :assets do
   gem 'gumby-rails'
 end
 
-gem 'gumby-rails'
 gem 'jquery-rails'
 gem 'devise'
+gem 'bloggy'
 group :production do 
   gem 'pg'
 end

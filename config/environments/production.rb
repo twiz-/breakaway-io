@@ -18,7 +18,7 @@ Breakawayio::Application.configure do
   config.assets.compile = true
   
   #suggested form devise for pushing to heroku
-  config.assets.initialize_on_precompile = false
+  config.assets.initialize_on_precompile = true
 
   # Generate digests for assets URLs
   config.assets.digest = true
