@@ -19,4 +19,10 @@ p.notice {
 p.alert {
 	margin: 0px;
 }
+.marketing_header {
+	line-height: 64px;
+	font-weight: 300;
+	margin-top: 15px;
+	font-size: 2.75em;
+}
 /* For devise I suppose */
